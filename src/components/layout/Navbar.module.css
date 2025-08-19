@@ -1,0 +1,82 @@
+.navbar {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background: #333;
+  position: relative;
+}
+
+.mainLogo {
+  position: absolute;
+  right: 47%;
+}
+
+/* Área do dropdown */
+.dropdownWrapper {
+  margin-left: auto; /* Joga o botão para a direita */
+  position: relative;
+}
+
+.btn {
+  background-color: yellow;
+  cursor: pointer;
+  border: 2px solid dodgerblue;
+  width: auto;
+  padding: .5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.btn:hover {
+  background-color: gold;
+}
+
+/* Ícone de seta */
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrowUp {
+  transform: rotate(180deg);
+}
+
+/* Menu dropdown */
+.menuBar {
+  position: absolute;
+  top: 100%;
+  right: -20%;
+  background: #333;
+  width: 250px;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.menuBar p {
+  background: none;
+  padding: 1rem;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.menuBar p:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.mobileList {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mobileList i {
+  font-size: 1rem;
+}
+
