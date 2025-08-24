@@ -101,3 +101,29 @@ span {
         font-size: .7rem;
     }
 }
+
+@media(max-height: 1370px) {
+
+    .footer {
+        height: 60vh;
+    }
+
+    .logo {
+        width: 150px;
+        height: 100px;
+    }
+
+    .footerLayer {
+        flex-direction: column; /* empilha os itens */
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .footer span {
+        font-size: .8rem;
+    }
+
+    .footer p {
+        font-size: .7rem;
+    }
+}

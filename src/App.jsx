@@ -1,19 +1,24 @@
 import { Navbar } from './components/layout/Navbar';
 import { Services } from './components/pages/Services';
-import { Cover } from './components/layout/Cover';
+
 import { Footer } from './components/layout/Footer';
 
-
+import { useState } from 'react';
 import styles from './App.module.css';
 import { WhatsAppLogo } from './components/layout/WhatsAppLogo';
 
 function App() {
 
+    const [showServices, setShowServices] = useState(false);
+  
+    function toggleServices() {
+      setShowServices(!showServices);
+    }
 
   return (
     <div className={styles.app}>
-      <Navbar />
-      <Services />
+      <Navbar toggleServices={toggleServices} showServices={showServices}/>
+      <Services showServices={showServices}/>
       <Footer />
       <WhatsAppLogo />
     </div>
