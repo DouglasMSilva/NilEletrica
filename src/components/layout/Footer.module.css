@@ -102,28 +102,18 @@ span {
     }
 }
 
-@media(max-height: 1370px) {
+@media (max-width: 912px) and (max-height: 1368px) {
 
     .footer {
-        height: 60vh;
+        height: 30vh;
     }
 
-    .logo {
-        width: 150px;
-        height: 100px;
-    }
 
     .footerLayer {
-        flex-direction: column; /* empilha os itens */
+        flex-direction: row; /* empilha os itens */
         gap: 2rem;
         align-items: center;
     }
 
-    .footer span {
-        font-size: .8rem;
-    }
 
-    .footer p {
-        font-size: .7rem;
-    }
 }
